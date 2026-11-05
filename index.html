@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dahua seguridad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DAHUA J&C EL VIGILANTE</span></div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="carrito-btn" onclick="mostrarCarrito()">
+        🛒 Carrito (<span id="contador">0</span>)
+    </button>
+</header>
+
+<section id="inicio" class="hero">
+    <div>
+        <h1>Protege lo que más importa</h1>
+        <p>Cámaras de seguridad Dahua para tu hogar, negocio o empresa.</p>
+        <a href="#productos" class="boton">Ver productos</a>
+    </div>
+</section>
+
+<section id="productos" class="productos">
+    <h2>Cámaras de Seguridad Dahua</h2>
+
+    <div class="catalogo">
+
+        <div class="producto">
+            <img src="camara bala.jpeg" alt="Cámara bala">
+            <h3>Dahua HAC-HFW1200T</h3>
+            <p>Cámara bala</p>
+            <strong>Bs 320</strong>
+            <button onclick="agregarCarrito('Dahua HAC-HFW1200T',280)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="camara 3.jpeg" alt="Cámara domo">
+            <h3>Dahua HAC-HDW1200T</h3>
+            <p>Cámara domo </p>
+            <strong>Bs 320</strong>
+            <button onclick="agregarCarrito('Dahua HAC-HDW1200T',270)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="video hailun.jpeg" alt="grabadora">
+            <h3>Dahua IPC-HFW1230S</h3>
+            <p>Grabadora DVR-NVR</p>
+            <strong>Bs 450</strong>
+            <button onclick="agregarCarrito('Dahua IPC-HFW1230S',450)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="cable.jpeg" alt="video">
+            <h3>Dahua IPC-HDW1230T</h3>
+            <p>video balun</p>
+            <strong>Bs 45</strong>
+            <button onclick="agregarCarrito('Dahua IPC-HDW1230T',430)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="cable de adaptador.jpeg" alt="conector">
+            <h3>Dahua IPC-HFW1431S</h3>
+            <p>Conector plug</p>
+            <strong>Bs 6</strong>
+            <button onclick="agregarCarrito('Dahua IPC-HFW1431S',620)">
+                Agregar al carrito
+            </button>
+        </div>
+
+        <div class="producto">
+            <img src="cargador.jpeg" alt="conector">
+            <h3>Dahua Wi-Fi</h3>
+            <p>Conectores BNC-RJ45</p>
+            <strong>Bs 15</strong>
+            <button onclick="agregarCarrito('Dahua',350)">
+                Agregar al carrito
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<div id="carrito" class="carrito">
+    <div class="carrito-contenido">
+        <span class="cerrar" onclick="cerrarCarrito()">×</span>
+
+        <h2>🛒 Mi pedido</h2>
+
+        <div id="listaCarrito"></div>
+
+        <h3>Total: Bs <span id="total">0</span></h3>
+
+        <input type="text" id="nombre" placeholder="Tu nombre">
+        <input type="text" id="direccion" placeholder="Dirección de entrega">
+
+        <button class="whatsapp" onclick="enviarPedido()">
+            📱 Pedir por WhatsApp
+        </button>
+    </div>
+</div>
+
+<section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>📱 WhatsApp: 71043777</p> 
+
+    <div class="ubicacion">
+        <h2>📍 Visítanos</h2>
+        <p>Encuentra nuestra ubicación en Google Maps.</p>
+      
+        <a
+          href="https://maps.app.goo.gl/ufmbp9T4JXy3Rvu49"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-maps">
+          📍 Ver ubicación en Google Maps
+        </a>
+      </div>
+      
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
